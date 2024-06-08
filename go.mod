@@ -3,7 +3,8 @@ module github.com/gstarikov/bob
 go 1.22
 
 replace (
-	source github.com/stephenafamo/bob => github.com/gstarikov/bob
+	github.com/stephenafamo/bob => github.com/gstarikov/bob v0.0.0-20240608185434-0429d8a97a57
+	github.com/stephenafamo/bob/gen => github.com/gstarikov/bob/gen v0.0.0-20240608185434-0429d8a97a57
 )
 
 toolchain go1.22.1
@@ -28,6 +29,7 @@ require (
 	github.com/lib/pq v1.10.7
 	github.com/nsf/jsondiff v0.0.0-20210926074059-1e845ec5d249
 	github.com/qdm12/reprint v0.0.0-20200326205758-722754a53494
+	github.com/stephenafamo/bob v0.0.0-00010101000000-000000000000
 	github.com/stephenafamo/scan v0.4.2
 	github.com/stephenafamo/sqlparser v0.0.0-20230326220333-c2adaf4c30e8
 	github.com/takuoki/gocase v1.0.0
@@ -61,7 +63,6 @@ require (
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
 	github.com/knadh/koanf/maps v0.1.1 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/mattn/go-sqlite3 v1.14.16 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
@@ -69,10 +70,8 @@ require (
 	github.com/pganalyze/pg_query_go/v5 v5.1.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/sergi/go-diff v1.1.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
-	github.com/stretchr/testify v1.8.2 // indirect
 	github.com/tetratelabs/wazero v1.7.0 // indirect
 	github.com/volatiletech/inflect v0.0.1 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
@@ -83,7 +82,6 @@ require (
 	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
-	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	lukechampine.com/uint128 v1.2.0 // indirect
