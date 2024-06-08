@@ -1,6 +1,10 @@
-module github.com/stephenafamo/bob
+module github.com/gstarikov/bob
 
 go 1.22
+
+replace (
+	source github.com/stephenafamo/bob => github.com/gstarikov/bob
+)
 
 toolchain go1.22.1
 
