@@ -2,10 +2,7 @@ module github.com/gstarikov/bob
 
 go 1.22
 
-replace (
-	github.com/stephenafamo/bob => github.com/gstarikov/bob v0.0.0-20240608185434-0429d8a97a57
-	github.com/stephenafamo/bob/gen => github.com/gstarikov/bob/gen v0.0.0-20240608185434-0429d8a97a57
-)
+replace github.com/stephenafamo/bob => github.com/gstarikov/bob v0.0.0-20240608194131-65cf9b4b4940
 
 toolchain go1.22.1
 

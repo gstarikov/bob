@@ -227,8 +227,8 @@ func Types() drivers.Types {
                 rand.Read(addr[:])
                 ipAddr := netip.AddrFrom4(addr)
                 ipPrefix := netip.PrefixFrom(ipAddr, f.IntBetween(0, ipAddr.BitLen()))
-                return any(types.Text[netip.Prefix, *netip.Prefix]{Val: ipPrefix}).(T)`,
-			RandomExprImports: importers.List{`"net/netip"`, `"crypto/rand"`},
+                return any(pgtypes.Inet{Prefix: ipPrefix}).(T)`,
+			RandomExprImports: importers.List{"fake-import"},
 		},
 		"types.Stringer[net.HardwareAddr]": {
 			Imports: importers.List{
